@@ -26,6 +26,8 @@ So each plugin carries its own updater: `hooks/self-update.sh`, run by a `Sessio
 claude plugin marketplace update design-team && claude plugin update <plugin>@design-team
 ```
 
+To find `claude`, the script tries, in order: `$CLAUDE_CODE_EXECPATH` (the binary that ran the hook; undocumented but set today), `claude` on PATH, then the copy bundled in the Mac desktop app. Desktop-only users may have no `claude` command at all.
+
 The update loads the next time Claude starts. The script's last output is in `~/.claude/plugins/data/<plugin>-design-team/last-update.log`.
 
 **Adding a new plugin:** copy `plugins/project-memory/hooks/self-update.sh`, change `project-memory` to the new plugin's name, and add the hook entry to its `hooks.json`. Run it with `bash "..."` in the command, as project-memory does, so the file doesn't need to be marked executable.

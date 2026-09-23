@@ -13,6 +13,10 @@ claude plugin marketplace add mattcmorrell/claude-project-memory && claude plugi
 
 Then restart Claude Code. After that, updates install themselves (it checks once a day).
 
+**Using the Claude desktop app instead?** Click **+ → Plugins**, add the marketplace
+`mattcmorrell/claude-project-memory`, and install **project-memory**. The app and the
+terminal share plugins, so installing in one covers both.
+
 **Or skip installing entirely:** if a repo you work in already includes the snippet
 below, the plugin installs itself the first time you open that repo in Claude Code
 and trust the folder.
