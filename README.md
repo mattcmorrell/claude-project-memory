@@ -13,6 +13,28 @@ claude plugin marketplace add BambooHR/claude-project-memory && claude plugin in
 
 Then restart Claude Code.
 
+**Or skip installing entirely:** if a repo you work in already includes the snippet
+below, the plugin installs itself the first time you open that repo in Claude Code
+and trust the folder.
+
+### Adding it to a shared repo
+
+Put this in the repo's `.claude/settings.json` and commit it. If the file already
+exists, merge these two keys in.
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "design-team": {
+      "source": { "source": "github", "repo": "BambooHR/claude-project-memory" }
+    }
+  },
+  "enabledPlugins": {
+    "project-memory@design-team": true
+  }
+}
+```
+
 ## Use
 
 | When | Run |
