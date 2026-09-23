@@ -8,7 +8,7 @@ long-term memory in two plain files that live in your project.
 Paste this into your terminal:
 
 ```
-claude plugin marketplace add BambooHR/claude-project-memory && claude plugin install project-memory@design-team
+claude plugin marketplace add mattcmorrell/claude-project-memory && claude plugin install project-memory@design-team
 ```
 
 Then restart Claude Code.
@@ -26,7 +26,7 @@ exists, merge these two keys in.
 {
   "extraKnownMarketplaces": {
     "design-team": {
-      "source": { "source": "github", "repo": "BambooHR/claude-project-memory" }
+      "source": { "source": "github", "repo": "mattcmorrell/claude-project-memory" }
     }
   },
   "enabledPlugins": {
