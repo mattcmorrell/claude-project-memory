@@ -1,0 +1,8 @@
+{
+  "name": "project-memory",
+  "description": "Gives Claude long-term memory in a project with INTENT.md (the work in progress) and KNOWLEDGE.md (hard-won facts).",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matt Morrell"
+  }
+}
