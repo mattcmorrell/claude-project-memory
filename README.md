@@ -11,7 +11,7 @@ Paste this into your terminal:
 claude plugin marketplace add mattcmorrell/claude-project-memory && claude plugin install project-memory@design-team
 ```
 
-Then restart Claude Code.
+Then restart Claude Code. After that, updates install themselves (it checks once a day).
 
 **Or skip installing entirely:** if a repo you work in already includes the snippet
 below, the plugin installs itself the first time you open that repo in Claude Code
