@@ -5,12 +5,13 @@ long-term memory in two plain files that live in your project.
 
 ## Install (once)
 
-In Claude Code:
+Paste this into your terminal:
 
 ```
-/plugin marketplace add BambooHR/claude-project-memory
-/plugin install project-memory@design-team
+claude plugin marketplace add BambooHR/claude-project-memory && claude plugin install project-memory@design-team
 ```
+
+Then restart Claude Code.
 
 ## Use
 
