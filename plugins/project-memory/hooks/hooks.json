@@ -1,0 +1,17 @@
+{
+  "description": "Offers to set up project memory the first time Claude opens a project without it",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/offer-setup.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

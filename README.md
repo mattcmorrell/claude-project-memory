@@ -42,7 +42,10 @@ exists, merge these two keys in.
 | First time in a project | `/project-memory:setup` |
 | End of a work session | `/project-memory:wrap-up` |
 
-That's it. After setup, Claude reads both files automatically at the start of every
+You don't even need to remember setup: the first time you open Claude in a project
+without memory files, it offers to set them up. It asks once per project.
+
+After setup, Claude reads both files automatically at the start of every
 session and after `/compact`.
 
 ## The two files
