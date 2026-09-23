@@ -23,7 +23,10 @@ git rev-parse --is-inside-work-tree && git log --format='%ae' | sort -u
 - **Other people commit** (it's an engineering or team repo): **private mode.** The block
   goes in `CLAUDE.local.md`. Add `CLAUDE.local.md`, `INTENT.md`, and `KNOWLEDGE.md` to
   `.git/info/exclude`, not `.gitignore`. Editing `.gitignore` would be a change the
-  whole team sees.
+  whole team sees. Claude Code asks permission before touching `.git`, so first tell the
+  user in one line: "Next I'll ask to hide these files from git so they never get
+  committed. Please allow it." Then run (skipping names already listed):
+  `printf 'CLAUDE.local.md\nINTENT.md\nKNOWLEDGE.md\n' >> .git/info/exclude`
 - **Not a git repo**: shared mode.
 
 Tell the user which mode you picked and why in one sentence, and that they can say
